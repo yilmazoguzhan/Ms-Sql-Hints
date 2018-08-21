@@ -1,0 +1,2 @@
+SELECT LEFT('http://www.google.com/testpath/file.jpg',LEN('http://www.google.com/testpath/file.jpg') - charindex('/',reverse('http://www.google.com/testpath/file.jpg'),1) + 1) [path], 
+       RIGHT('http://www.google.com/testpath/file.jpg', CHARINDEX('/', REVERSE('http://www.google.com/testpath/file.jpg')) -1)  [file_name]
